@@ -1,0 +1,54 @@
+body{
+background: #61fcff;
+background: linear-gradient(90deg, rgb(243, 76, 10) 0%, rgb(247, 255, 87) 35%, rgb(20, 239, 0) 91%);
+}
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+
+.navbar{
+background-color: rgb(0, 0, 0);
+color: rgb(226, 0, 0);
+}
+.navbar ul{
+display: flex;
+gap: 4px;
+list-style: none;
+}
+
+header{
+
+    position: relative;
+}
+header h3{
+position: absolute;
+left: calc(50%);
+transform: translateX(-50%);
+}
+/* contato.html */
+.formulario-campo{
+display: flex;
+flex: 1;
+gap: 16px;
+width: 70%;
+justify-content: space-between;
+margin-bottom: 8px;
+align-items: center;
+}
+.formulario-campo label{
+font-family: 'Times New Roman', Times, serif;
+font-weight: 400;
+
+}
+.formulario-campo input,
+.formulario-campo select,
+.formulario-campo textarea{
+width: 300px;
+
+
+
+}

@@ -1,0 +1,49 @@
+#titulo{
+text-align: center;
+
+} 
+#formulario{
+display: flex;
+gap: 5px;
+width: 400px;
+margin: 0 auto;
+}
+#formulario-input{
+    width:80% ;
+}
+#area{
+    height: 50vh;
+}
+
+#lista-vazia{
+margin-top: 4rem;
+width: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+}
+#lista-vazia *{
+    margin: 0;
+}
+.hidden{
+    display: none;
+}
+.tarefas-contador{
+display:flex;
+width: 100%;
+justify-content: space-between;
+}
+
+#lista-Atividade{
+padding: 0;
+list-style: none;
+}
+.card-Atividade{
+display: flex;
+border-radius: 8px;
+background: rgb(32, 244, 170);
+color: rgb(15, 150, 228);
+width: 70%;
+}
