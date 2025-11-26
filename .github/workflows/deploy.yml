@@ -23,22 +23,22 @@ jobs:
     outputs:
       page_url: ${{steps.deployment.outputs.page_url}}
 
-  environment:
-    name: github-pages
-    url: ${{steps.deployment.outputs.page_url}}
+    environment:
+      name: github-pages
+      url: ${{steps.deployment.outputs.page_url}}
 
-  steps:
-    - name: ☯️ checkout code
-      uses: actions/checkout@v4
+    steps:
+      - name: ☯️ checkout code
+        uses: actions/checkout@v4
 
-    - name: 🎶 setup pages
-      uses: actions/configure-pages@v4
+      - name: 🎶 setup pages
+        uses: actions/configure-pages@v4
 
-    - name: 🐗 upload artifact
-      uses: actions/uploa-pages-artifact@v4
-      with:
-        path: "."
-      
-    - name: 🌀 deploy to Github pages
-      id: deployment
-      uses: actions/Deploy-pages@v4
+      - name: 🐗 upload artifact
+        uses: actions/uploa-pages-artifact@v4
+        with:
+          path: "."
+        
+      - name: 🌀 deploy to Github pages
+        id: deployment
+        uses: actions/Deploy-pages@v4
